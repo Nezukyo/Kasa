@@ -1,22 +1,35 @@
-import infos from "../../../src/accommodation.json"
 import Card from "../Card";
 import "../Main/style.css";
+import React, { useState, useEffect } from 'react';
 
 function Main() {
-    return (
-      <div className="Main">
-        {/*Same as for each, you take one element from the tab and you look for its id, title and cover and once it reviewed everything it stops */}
-        {infos.map(info => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/accommodation.json")
+      .then(response => response.json())
+      .then(data => setData(data))
+      .catch(error => console.error("Erreur lors de la récupération des données : ", error));
+  }, []);
+  return (
+    <div>
+        {data.length > 0 ? (
+          <div className="Main">
+        {data.map(propriete => {
           return (
             <Card 
-            key={info.id}
-            id={info.id}
-            title={info.title}
-            cover={info.cover}
+            key={propriete.id}
+            id={propriete.id}
+            title={propriete.title}
+            cover={propriete.cover}
             />
           )
         })}
-      </div>
+        </div>
+        ) : (
+          <div className="Main"></div>
+        )}
+            </div>
     )
   
   }
