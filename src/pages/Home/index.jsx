@@ -1,7 +1,15 @@
-function Home() {
-  return (
-    <div>bon</div>
-  );
-}
+import BannerMain from "../../components/Banner/main-banner";
+import Main from "../../components/Main";
+import Footer from "../../components/Footer";
 
-export default Home;
+function Home() {
+    return (
+      <div className="home">
+        <BannerMain />
+        <Main />
+      </div>
+    )
+  
+  }
+  
+  export default Home;

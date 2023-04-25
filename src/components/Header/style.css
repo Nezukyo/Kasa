@@ -1,0 +1,44 @@
+.nav {
+    color: #FF6060;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top:13px;
+    padding-right:25px;
+    white-space: nowrap;
+    font-size: 1.2em;
+
+}
+
+.nav-link {
+    text-decoration:none;
+    margin-left:30px;
+    color:#FF6060;
+}
+
+.nav-active {
+    margin-left:30px;
+    color:#FF6060;
+    text-decoration:underline;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.kasaLogo {
+width:150px;
+padding-left:25px;
+}
+
+.header {
+width:auto;
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+padding: 0 35px;
+}
