@@ -12,6 +12,9 @@ const GlobalStyle = createGlobalStyle`
     * {
       font-family: 'Montserrat', sans-serif;
     }
+    body {
+      margin: 0;
+    }
 `;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

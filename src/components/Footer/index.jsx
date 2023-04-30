@@ -1,10 +1,10 @@
-import Logo from "../../Assets/kasa.png";
+import Logo from "../../Assets/LOGO.png";
 import "../Footer/style.css";
 
 function Footer() {
   return (
     <footer className="footer">
-        <div className="Logo-footer">
+        <div className="Kasa-footer">
             <img src={Logo} alt="logo-kasa" className="logoFooter"></img>
         </div>
             <div className="footer-txt">

@@ -7,8 +7,7 @@ function Home() {
         <BannerMain />
         <Main />
       </div>
-    )
-  
+    ) 
   }
   
   export default Home;
