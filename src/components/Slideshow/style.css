@@ -1,0 +1,22 @@
+.Slider {
+  width: 92%;
+  flex-direction: column;
+  display: flex;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px 10px 10px 10px;
+  background-position: center;
+}
+
+.slide-img-style {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.count {
+  text-align: center;
+  margin-top: 150px;
+}
