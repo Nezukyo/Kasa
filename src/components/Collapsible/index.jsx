@@ -3,7 +3,7 @@ import arrowUp from "../../Assets/arrow-up.png";
 import arrowDown from "../../Assets/arrow-down.png";
 import "../Collapsible/style.css";
 
-function Collapse({ title, content }) {
+function Collapse(props) {
   /* Creating the hook that will allow me to open or close a tab, state put at false to begin with*/
   const [open, setOpen] = useState(false);
   const displayContent = () => {
@@ -11,9 +11,9 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse-section">
+    <div className={`collapse-section ${props.housingStyle}`}>
       <div className="collapse-title">
-        <p className="title-style">{title}</p>
+        <p className="title-style">{props.title}</p>
         <span className="arrow" onClick={displayContent}>
           {open ? (
              <img src={arrowDown} alt="iconUp" className="arrowUp"></img>
@@ -23,7 +23,7 @@ function Collapse({ title, content }) {
         </span>
       </div>
       {/* If the collapse changes to true it displays the content */}
-      <div className="collapse-dropdown">{open && <p className="content-style">{content}</p>}</div>
+      <div className="collapse-dropdown">{open && <p className="content-style">{props.content}</p>}</div>
     </div>
   );
 }
