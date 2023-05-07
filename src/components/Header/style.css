@@ -1,10 +1,8 @@
 .nav {
   color: #ff6060;
-  width: 20%;
   display: flex;
   justify-content: space-between;
   padding-top: 13px;
-  padding-right: 25px;
   white-space: nowrap;
   font-size: 1.2em;
 }
@@ -42,4 +40,27 @@ a {
   padding: 0 35px;
   margin-bottom: 50px;
   margin-top: 20px;
+}
+
+@media (max-width: 760px) {
+  .kasaLogo {
+    width: 125px;
+    padding-left: 0px;
+  }
+
+  .header {
+    margin-bottom: 0;
+    padding: 0 25px;
+
+  }
+
+  .nav {
+    font-size: 0.7em;
+    padding-top: 16px;
+  }
+
+  .nav-active,
+  .nav-link {
+    text-transform: uppercase !important;
+  }
 }

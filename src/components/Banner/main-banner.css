@@ -23,3 +23,22 @@
   height: 135px;
   object-fit:cover;
 }
+
+@media (max-width : 760px){
+  .main-bg {
+    height: 115px;
+  }
+
+  .custom-txt {
+    font-size: 1.5em;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .Main-banner {
+  
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}

@@ -1,20 +1,31 @@
 .about-banner {
-    border-radius: 20px 20px 20px 20px;
-    height: 130px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 15px;
-    margin-right: 50px;
-    margin-left: 50px;
+  border-radius: 20px 20px 20px 20px;
+  height: 130px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 15px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.about-bg {
+  width: 100%;
+  filter: brightness(70%);
+  border-radius: 20px 20px 20px 20px;
+  height: 135px;
+  object-fit: cover;
+}
+
+@media (max-width: 760px) {
+  .about-banner {
+    margin-right: 15px;
+    margin-left: 15px;
   }
-  
+
   .about-bg {
-    width: 100%;
-    filter: brightness(70%);
-    border-radius: 20px 20px 20px 20px;
-    height: 135px;
-    object-fit:cover;
+    margin-top: 65px;
+    height: 185px;
   }
-  
+}

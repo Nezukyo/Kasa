@@ -34,13 +34,13 @@ const Slideshow = ({ slide }) => {
                 src={arrowLeft}
                 alt="previous"
                 onClick={prevPic}
-                className="arrow-left"
+                className="arrow-left arrow"
               />
               <img
                 src={arrowRight}
                 alt="next"
                 onClick={nextPic}
-                className="arrow-right"
+                className="arrow-right arrow"
               />
             </div>
             <p className="count">

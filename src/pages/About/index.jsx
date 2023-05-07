@@ -4,6 +4,7 @@ import Datas from "../About/about.json";
 import React from "react";
 
 function About() {
+  document.title = "Kasa : à propos"
   return (
     <div className="about">
       <AboutBanner />

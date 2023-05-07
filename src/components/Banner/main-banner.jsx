@@ -5,7 +5,7 @@ function bannerMain() {
   return (
     <div className="Main-banner">
       <img src={Background} alt="main-bg" className="main-bg"></img>
-        <p className="custom-txt">Chez vous, partout et ailleurs</p>
+        <p className="custom-txt"><span>Chez vous,</span><span> partout et ailleurs</span></p>
       </div>
   );
 }
