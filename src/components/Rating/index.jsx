@@ -7,9 +7,9 @@ function Rating (props) {
     const allStars = [];
     for (let i = 0; i <= 4; i++){
         if (stars > i){
-            allStars.push(<img src={redStar} className="red-star star" alt="redStar"/>)
+            allStars.push(<img src={redStar} key={i} className="red-star star" alt="redStar"/>)
         } else {
-            allStars.push(<img src={whiteStar} className="white-star star" alt="whiteStar"/>)
+            allStars.push(<img src={whiteStar} key={i} className="white-star star" alt="whiteStar"/>)
         }
     }
     return (
