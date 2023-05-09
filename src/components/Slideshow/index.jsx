@@ -5,6 +5,7 @@ import "../Slideshow/style.css";
 import arrowLeft from "../../Assets/arrow-left.png";
 import arrowRight from "../../Assets/arrow-right.png";
 
+//function that awaits an array of images which is given as a prop by the name slide
 const Slideshow = ({ slide }) => {
   const [mainPic, setMainPic] = useState(0);
   const length = slide.length;
