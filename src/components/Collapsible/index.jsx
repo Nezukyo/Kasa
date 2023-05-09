@@ -23,7 +23,7 @@ function Collapse(props) {
         </span>
       </div>
       {/* If the collapse changes to true it displays the content */}
-      <div className="collapse-dropdown">{open && <p className={`content-style ${props.collapseHousing === true ? "style-collapse-housing" : ""}`}>{props.content}</p>}</div>
+      <div className="collapse-dropdown">{open && <div className={`content-style ${props.collapseHousing === true ? "style-collapse-housing" : ""}`}>{props.content}</div>}</div>
     </div>
   );
 }
