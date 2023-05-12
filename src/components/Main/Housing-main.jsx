@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import housings from "../../accommodation.json";
+//import housings from "../../accommodation.json";
 import Collapse from "../Collapsible";
 import Slideshow from "../Slideshow";
 import Rating from "../Rating";
@@ -7,7 +7,7 @@ import "../Main/Housing-main-style.css";
 
 import Error from "../../components/Error";
 
-function Housing() {
+function Housing({housings}) {
   const { housingId } = useParams();
   const housing = housings.find((housing) => housing.id === housingId);
   if (housing === undefined) {
